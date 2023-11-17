@@ -1,0 +1,196 @@
+{
+  "workbench.colorTheme": "Community Material Theme Darker High Contrast",
+  "files.autoSave": "off",
+  "files.insertFinalNewline": true,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "editor.minimap.enabled": false,
+  "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "Inconsolata",
+  "editor.cursorStyle": "line",
+  "editor.fontSize": 16,
+  "editor.quickSuggestionsDelay": 5,
+  "editor.suggestLineHeight": 30,
+  "editor.letterSpacing": 0.5,
+  "html.format.enable": true,
+  "html.format.preserveNewLines": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.tabSize": 2,
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "editor.cursorWidth": 5,
+  "editor.wordWrap": "on",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.fontWeight": "400",
+  "editor.cursorBlinking": "phase",
+  "editor.rulers": [100],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.detectIndentation": true,
+  "editor.lightbulb.enabled": false,
+  "editor.snippetSuggestions": "top",
+  "editor.suggest.showKeywords": false,
+  "editor.wordBasedSuggestions": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.suggestSelection": "recentlyUsed"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": ["entity.name.function", "support.function"],
+        "settings": {
+          "fontStyle": "bold"
+        }
+      }
+    ]
+  },
+  "editor.renderWhitespace": "all",
+  "editor.glyphMargin": false,
+  "editor.smoothScrolling": true,
+  "editor.folding": false,
+  "files.exclude": {
+    "**/.env": true,
+    "USE_GITIGNORE": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/coverage": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.build": true,
+    "**/.gh-pages": true
+  },
+  "editor.lineNumbers": "on",
+  "workbench.tree.indent": 20,
+  "terminal.integrated.scrollback": 10000,
+  "apc.activityBar": { "hideSettings": true, "position": "top" },
+  "apc.listRow": { "height": 30 },
+  "workbench.tree.renderIndentGuides": "always",
+  "update.mode": "manual",
+  "terminal.integrated.inheritEnv": false,
+  "workbench.layoutControl.enabled": false,
+  "explorer.openEditors.visible": 0,
+  "workbench.startupEditor": "none",
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.perEditorGroup": false,
+  "workbench.editor.limit.value": 10,
+  "breadcrumbs.enabled": false,
+  "breadcrumbs.filePath": "on",
+  "breadcrumbs.symbolPath": "last",
+  "npm.runSilent": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "modificationsIfAvailable",
+  "editor.formatOnPaste": false,
+  "terminal.integrated.fontSize": 20,
+  "editor.inlineSuggest.enabled": true,
+  "workbench.panel.defaultLocation": "right",
+  "terminal.integrated.defaultLocation": "editor",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "terminal.integrated.env.windows": {},
+  "workbench.sideBar.location": "right",
+  "workbench.activityBar.location": "top",
+  "[sql]": {
+    "editor.defaultFormatter": "mtxr.sqltools"
+  },
+
+  "todohighlight.isEnable": false,
+  "todohighlight.isCaseSensitive": true,
+  "todohighlight.keywords": [
+    "FIXME:", // without further details, this will use the defaultStyle
+    "REVIEW:" // as will this
+    // now for a more complex example
+    // {
+    //   "text": "INFO:", // without a defined regex pattern this is the string that will be matched
+    //   "color": "green",
+    //   "backgroundColor": "rgba(0,0,0,0)", // INFO: setting the last parameter to zero (alpha channel) disables the background colour
+    //   "border": "none",
+    //   "isWholeLine": false
+    // },
+    // {
+    //   "text": "WARNING:",
+    //   "before": {
+    //     "contentText": "⚠️" // adds text before the highlight
+    //   },
+    //   "after": {
+    //     "contentText": "⚠️" // adds text after the highlight
+    //   },
+    //   "color": "red",
+    //   "border": "1px solid red",
+    //   "borderRadius": "2px", // NOTE: use borderRadius along with `border` or you will see nothing change
+    //   "backgroundColor": "rgba(0,0,0,.2)",
+    //   "diagnosticSeverity": "warning" // Set diagnostic severity to `none`, `information`, `warning` or `error`
+    // },
+    // {
+    //   "text": "TODO(string):", // with a regex pattern defined, this setting isn't used, but is useful as a name for this section
+    //   "regex": {
+    //     "pattern": "(?<=^|\"|\\s)TODO(\\(\\w+\\))?:" // this allows for TODO: or TODO(Bob): etc.
+    //   },
+    //   "color": "red",
+    //   "border": "1px solid red",
+    //   "borderRadius": "2px", //NOTE: use borderRadius along with `border` or you will see nothing change
+    //   "backgroundColor": "rgba(0,0,0,.2)"
+    // },
+    // {
+    //   "text": "NOTE:", // with a regex pattern defined, this setting isn't used, but is useful as a name for this section
+    //   "color": "#ff0000",
+    //   "backgroundColor": "yellow",
+    //   "overviewRulerColor": "grey",
+    //   "regex": {
+    //     "pattern": "(?<=^|\"|\\s)NOTE[:]?(?!\\w)" // in this example, highlight `NOTE:` with or without the `:` and that's not part of another word.  (I.e.: The above will highlight 'NOTE' but not the "note" in 'SIDENOTE').
+    //     /**
+    //      * Positive lookbehind (`(?<=...)`) is only supported in Node.js v9 and up.
+    //      * If your VSCode version is built on an earlier version the example above may not work. Simple tests:
+    //      * Shouldn't work: note  deNOTEd  NOTEing
+    //      * Should work: NOTE:  "NOTE:"
+    //      **/
+    //   },
+    //   "isWholeLine": false
+    // }
+  ],
+  "todohighlight.keywordsPattern": "TODO:|FIXME:|\\(([^\\)]+)\\)", //highlight `TODO:`,`FIXME:` or content between parentheses
+  // NOTE: remember to escape the backslash if there's any in your regexp (using \\\\ instead of single backslash)"
+  // "todohighlight.defaultStyle": {
+  //   "color": "red",
+  //   "backgroundColor": "#ffab00",
+  //   "overviewRulerColor": "#ffab00",
+  //   "cursor": "pointer",
+  //   "border": "1px solid #eee",
+  //   "borderRadius": "2px",
+  //   "isWholeLine": false
+  //   //other styling properties goes here ...
+  // },
+  "todohighlight.include": [
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.html",
+    "**/*.php",
+    "**/*.css",
+    "**/*.scss",
+    "**/*.md",
+    "**/*.mmd",
+    "**/*.markdown",
+    "**/*.mdown",
+    "**/*.txt",
+    "**/*.rb",
+    "**/*.go"
+  ],
+  "todohighlight.exclude": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/.vscode/**",
+    "**/.vscode-test/**",
+    "**/.github/**",
+    "**/_output/**",
+    "**/*.min.*",
+    "**/*.map",
+    "**/.next/**"
+  ],
+  "todohighlight.maxFilesForSearch": 5120,
+  "todohighlight.toggleURI": false,
+  "workbench.iconTheme": "gruvbox-material-icon-theme"
+}
+
